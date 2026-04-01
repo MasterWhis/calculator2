@@ -18,50 +18,50 @@ body, .container,  .button-container, .num-container, .num, .box {
     flex-direction: column;
     padding: 16px;
     border-radius: 8px;
-    background-color: orange;
+    background-color: #13171f ;
     box-shadow: 5px 3px 3px 1px;
 }
-.box{
-    flex-basis: 50%;
-}
+
 .disp{
     margin-bottom: 16px;
     padding: 8px;
-    font-size: 32px;
-    background: rgb(128 128 128 / 80%);
+    font-size: 48px;
+    background: #4b5668;
     border: 2px solid  black;
     border-radius: 4px;
     font-family: 'Calculator', sans-serif;
     box-shadow: 5px 3px 3px 1px;
 }
-.button-container {
-    flex-wrap: wrap;
-}
-.num {
-    flex-basis: 40%;
-    margin: 0px;
-    flex-grow: 1;
-    
-}
-.num-container, .button-container{
-    gap: 3px;
-    flex-wrap: wrap;
-    max-height: 280px;
-    flex: 1;
-}
-.num-container{
-margin-right: 10px;
-}
+
 .num, .box {
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-    box-shadow: 2px 3px 3px 1px;
+    box-shadow: 2px 3px 3px 2px rgb(0 0 0 / 0.8);
     background-color: #7a7a7a;
-    
+    width: 96px;
+    height: 64px;
+    font-size: 32px;
+    font-family: sans-serif;
 }
 .container-buttons{
     display: flex;
-    flex-direction: row;
+    flex-direction: column-reverse;
     flex: 1;
+    gap: 4px;
+    
+}
+
+.row{
+    display: flex;
+    gap: 4px;
+}
+
+.clear {
+    background-color: #9d0707;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;   
+}
+.eq {
+    background-color: #4c7fd3;
 }

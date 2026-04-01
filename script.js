@@ -18,7 +18,6 @@ const numButtons = document.querySelectorAll('.num');
 
 //Get the num1 value when buttons are pressed before operator
 numButtons.forEach(item => item.addEventListener('click', (e) => {
-    console.log(item.textContent);
     operator != '' ?
     num2 += item.textContent :
     num1 += item.textContent;
@@ -28,12 +27,11 @@ numButtons.forEach(item => item.addEventListener('click', (e) => {
 
 operationButtons.forEach(item => item.addEventListener('click', (e) => {
     if (operator != '') {
-        doTheOperation()
-        operator = item.textContent
+        doTheOperation();
+        operator = item.textContent;
     } else {
     operator.textContent = '';
-    operator = item.textContent
-    console.log(operator);
+    operator = item.textContent;
     };
     
 }));
