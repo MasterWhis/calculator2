@@ -60,4 +60,3 @@ clearBtn.addEventListener('click', () => {
     total = '';
     display.textContent = '123456789';
 });
-

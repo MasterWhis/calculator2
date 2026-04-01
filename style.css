@@ -1,5 +1,6 @@
+@import url('https://fonts.cdnfonts.com/css/calculator');
+
 * {
-    border: 1px solid black;
     box-sizing: border-box;
 }
 body{
@@ -8,40 +9,59 @@ body{
     justify-content: center;
 }
 
-body, .container,  .button-container, .num-container {
+body, .container,  .button-container, .num-container, .num, .box {
     display: flex;
 }
 .container {
-    width: 600px;
-    height: 600px;
+    width: 360px;
+    height: 400px;
     flex-direction: column;
-    padding: 20px;
+    padding: 16px;
+    border-radius: 8px;
+    background-color: orange;
+    box-shadow: 5px 3px 3px 1px;
 }
 .box{
-    width: 184px;
-    height: 92px;
+    flex-basis: 50%;
 }
 .disp{
-    margin-bottom: 32px;
-    padding: 32px;
-    font-size: 64px;
+    margin-bottom: 16px;
+    padding: 8px;
+    font-size: 32px;
+    background: rgb(128 128 128 / 80%);
+    border: 2px solid  black;
+    border-radius: 4px;
+    font-family: 'Calculator', sans-serif;
+    box-shadow: 5px 3px 3px 1px;
 }
 .button-container {
     flex-wrap: wrap;
-    flex: 1 0 0px;
-    justify-content: space-between;
 }
 .num {
-    flex: 1;
-    height: 64px;
-    margin-bottom: 16px;
+    flex-basis: 40%;
+    margin: 0px;
+    flex-grow: 1;
+    
 }
 .num-container, .button-container{
-    gap: 8px;
+    gap: 3px;
+    flex-wrap: wrap;
+    max-height: 280px;
+    flex: 1;
+}
+.num-container{
+margin-right: 10px;
 }
 .num, .box {
     border-radius: 4px;
-    display: flex;
     align-items: center;
     justify-content: center;
+    box-shadow: 2px 3px 3px 1px;
+    background-color: #7a7a7a;
+    
+}
+.container-buttons{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
