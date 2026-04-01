@@ -30,6 +30,7 @@ numButtons.forEach(item => item.addEventListener('click', (e) => {
     operator != '' ?
     num2 += item.textContent :
     num1 += item.textContent;
+    refreshDisp(num1, operator, num2);
     console.log(`Num1 : ${num1} and num2: ${num2}`);
 }));
 
@@ -37,3 +38,8 @@ operationButtons.forEach(item => item.addEventListener('click', (e) => {
     operator = item.textContent;
     console.table(operator);
 }));
+
+const display = document.querySelector('.disp');
+function refreshDisp(num1, operator, num2){
+    display.textContent = `${num1} ${operator} ${num2}`;
+};
