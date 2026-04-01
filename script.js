@@ -51,3 +51,13 @@ equal.addEventListener('click', window.doTheOperation = function() {
     num1 = total;
     refreshDisp(total);
 });
+
+const clearBtn = document.querySelector('.clear');
+clearBtn.addEventListener('click', () => {
+    num1 = '';
+    num2 = '';
+    operator = '';
+    total = '';
+    display.textContent = '123456789';
+});
+
